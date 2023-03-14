@@ -2,7 +2,7 @@ library(shiny)
 library(tidyverse)
 library(lubridate)
 
-rebalance_server <- function(input, output) {
+server <- function(input, output) {
   
   dat <- reactive({
     req(input$file1)
